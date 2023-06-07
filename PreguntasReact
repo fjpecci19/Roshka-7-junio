@@ -1,0 +1,16 @@
+¿Qué hace el componente userProfile?
+    Inicializ el estado de "user" en null mediante la función "useState()", luego en  "useEffect()" guarda en la constante "response"
+    los datos de la api a la cual se le hace llamada, y luego en la constante data guarda lo que está en "response", luego con "setUser"
+    cambia el valor de "user" con lo que está guardado en "data", y con el "fetchUser()" realiza la solicitud a la api pasándole el "userId",
+    para que pueda encontrar el usuario mediante el campo "ID", luego pregunta si la sesión está iniciada, si es que está pasará los datos
+    del usuario en la api, caso contrario devolverá el mensaje "Cargando Usuario..."
+¿Qué hace el componente Counter?
+    Inicializa el estado de "count" a 0 mediante la función "useState()", luego tiene dos funciones las cuales modificarán el estado de "count" mediante "setCount",
+    luego devuelve la interfaz del componente, la cual tiene dos botones que responderán a ambas funciones, el primer botón
+    responderá a la función "handleIncrement", y con esto aumentará el valor de "count" en 1, y el segundo botón responderá a la
+    función "handleDecrement" y disminuirá el valor de "count" en 1.
+
+¿Qué hace el componente userProfile?
+    En la constante "user" se guarda la función "useContext()" que recibe como parámetro el contexto "userContext", el cual devolverá
+    el valor del campo "user", el cual está entre llaves, para especificar que será llamado, luego pregunta si la sesión está iniciada, si es que está pasará los datos
+    del usuario en la api, caso contrario devolverá el mensaje "Cargando Usuario..." 
