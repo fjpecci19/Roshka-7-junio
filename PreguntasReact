@@ -14,3 +14,4 @@
     En la constante "user" se guarda la función "useContext()" que recibe como parámetro el contexto "userContext", el cual devolverá
     el valor del campo "user", el cual está entre llaves, para especificar que será llamado, luego pregunta si la sesión está iniciada, si es que está pasará los datos
     del usuario en la api, caso contrario devolverá el mensaje "Cargando Usuario..." 
+    
