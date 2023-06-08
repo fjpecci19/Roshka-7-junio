@@ -1,0 +1,20 @@
+h2{
+    text-align: center;
+    color: white;
+}
+
+.container{
+    background-color: lightblue;
+}
+
+img{
+    width: 10px;
+}
+
+h5{
+    font-size: 15px;
+}
+
+p{
+    font-size: 12px;
+}
