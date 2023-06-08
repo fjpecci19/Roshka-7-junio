@@ -23,9 +23,8 @@ function Card() {
       <div>
         <h2>Rick and Morty characters</h2>
       </div>
-      <h2></h2>
         <div className='container d-flex  justify-content-center align-items-center flex-wrap'>
-          {info.map((informacion, index) => (
+          {info.slice(0, 3).map((informacion, index) => (
           <div key={index} className='row m-5'>
             <div className='col-md-3'>
               <div className="card" style={{ width: '15rem' }}>
@@ -39,6 +38,22 @@ function Card() {
           </div>
           ))}
         </div>
+        <ul class="pagination d-flex justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
     </div>
   );
 }
