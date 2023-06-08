@@ -26,7 +26,7 @@ function Card() {
       <h2></h2>
         <div className='container d-flex  justify-content-center align-items-center flex-wrap'>
           {info.map((informacion, index) => (
-          <div key={index} className='row m-2'>
+          <div key={index} className='row m-5'>
             <div className='col-md-3'>
               <div className="card" style={{ width: '15rem' }}>
                 <img src={informacion.image} className="card-img-top" alt="..." />
