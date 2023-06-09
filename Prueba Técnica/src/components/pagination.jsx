@@ -1,26 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Pagination from 'react-bootstrap/Pagination';
+import "./pagination.css"
 
-function Pagination() {
+const Paginacion = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const pageNumbers = [1, 2, 3, 4, 5]; // Ejemplo de números de página
+
   return (
-    <div>
-      <ul class="pagination d-flex justify-content-center">
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">4</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-    </div>
-  )
-}
+    <Pagination className='pagination-container'>
+      {pageNumbers.map((pageNumber) => (
+        <Pagination.Item
+          key={pageNumber}
+          active={pageNumber === currentPage}
+          onClick={() => handlePageChange(pageNumber)}
+        >
+          {pageNumber}
+        </Pagination.Item>
+      ))}
+    </Pagination>
+  );
+};
 
-export default Pagination
+export default Paginacion;
