@@ -24,3 +24,9 @@ p{
     justify-content: center;
     margin-top: 10px;
 }
+
+Button{
+    width: 100%;
+    color: black;
+    background-color: white;
+}

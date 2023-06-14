@@ -1,4 +1,22 @@
 h2{
     text-align: center;
+    text-decoration: none;
     color: white;
+}
+
+.cuadro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.imag{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Link{
+    text-decoration: none;
 }

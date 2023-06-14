@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react"
+import { Link } from "react-router-dom/dist"
 import axios from 'axios'
 import "./styles.css"
 
@@ -47,6 +48,13 @@ function Pagina1() {
           <li className="page-item"><a className="page-link" href="Pagina6">6</a></li>
           <li className="page-item"><a className="page-link" href="Pagina7">7</a></li>
         </ul>
+        <div>
+            <Link to={"/"}>
+                <button>
+                    Volver    
+                </button>
+            </Link>
+        </div>
       </nav>
     </div>
     </div>
