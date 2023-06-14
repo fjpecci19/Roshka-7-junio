@@ -18,3 +18,9 @@ h5{
 p{
     font-size: 12px;
 }
+
+.pagination-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

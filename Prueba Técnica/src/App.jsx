@@ -1,11 +1,10 @@
-import Card from "./components/card"
-import Pagination from "./components/pagination"
+import React from 'react'
 
 function App() {
   return (
     <div>
-      <Card/>
-      <Pagination/>
+      <h2>Rick and Morty Characters</h2>
+      <h2 href="Pagina1">Mirar</h2>
     </div>
   )
 }
